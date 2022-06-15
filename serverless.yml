@@ -1,0 +1,13 @@
+service: aws-dependenciesprovider
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.7
+  deploymentMethod: direct
+
+functions:
+  hello:
+    handler: src/handler.py
+
